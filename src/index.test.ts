@@ -1,6 +1,12 @@
 import assert from "node:assert";
 import test from "node:test";
 
-test("it works", () => {
-  assert.deepStrictEqual(1, 1);
+test("Create a Future", () => {
+  const future = createFuture();
+
+  assert.deepStrictEqual(future, {});
 });
+
+function createFuture() {
+  return {};
+}
