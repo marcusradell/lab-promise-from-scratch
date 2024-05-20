@@ -7,6 +7,18 @@ test("Create a Future", () => {
   assert.deepStrictEqual(future, {});
 });
 
+test("Print out value in the Future", () => {
+  const future = createFuture();
+
+  assert.deepStrictEqual(future.display(), "");
+});
+
 function createFuture() {
-  return {};
+  function display() {
+    return "";
+  }
+
+  return {
+    display,
+  };
 }
